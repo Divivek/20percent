@@ -98,6 +98,7 @@ const passportConfig = (app) => {
   // create github
   if (GH_APPID && GH_SECRET) {
     // create new twitter strategy
+    console.log("Going for git hub")
     passport.use(new GitHubStrategy({
       scope: 'user:email',
       clientID: GH_APPID,

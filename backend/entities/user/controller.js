@@ -182,6 +182,7 @@ const signInViaFacebook = (profile) => {
  * @return {promise}              user doc
  */
 const signInViaGithub = (gitProfile) => {
+  console.log("Died in controller")
   return new Promise((resolve, reject) => {
 
     // find if user exist on db

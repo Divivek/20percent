@@ -1,5 +1,5 @@
 module.exports = {
-  DBURL : process.env.DBURL_URI || process.env.DBURL || 'mongodb://localhost:27017/reforum',
+  DBURL : process.env.DBURL_URI || process.env.DBURL || 'mongodb://localhost:27017/20percent',
 
   // twilio details
   TWI_APPID : process.env.TWI_APPID || null,
@@ -17,11 +17,15 @@ module.exports = {
   TW_SECRET : process.env.TW_SECRET || null,
 
   // github details
+  // GH_APPID : process.env.GH_APPID || null,
+  // GH_CBURL : process.env.GH_CBURL || null,
+  // GH_SECRET : process.env.GH_SECRET || null,
+
   GH_APPID : process.env.GH_APPID || null,
-  GH_CBURL : process.env.GH_CBURL || null,
+  GH_CBURL : process.env.GH_CBURL || null, // 'http://localhost:8080/api/user/authViaGithub/callback',
   GH_SECRET : process.env.GH_SECRET || null,
 
     // fill in these values to center the map views in the app
-    MAP_DEFAULT_CENTER_LATITUDE: process.env.MAP_DEFAULT_CENTER_LATITUDE || 37.7749,
-    MAP_DEFAULT_CENTER_LONGITUDE: process.env.MAP_DEFAULT_CENTER_LONGITUDE || -122.4194
+  MAP_DEFAULT_CENTER_LATITUDE: process.env.MAP_DEFAULT_CENTER_LATITUDE || 37.7749,
+  MAP_DEFAULT_CENTER_LONGITUDE: process.env.MAP_DEFAULT_CENTER_LONGITUDE || -122.4194
 };

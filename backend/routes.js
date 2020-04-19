@@ -21,7 +21,8 @@ const routesConfig = (app) => {
 
   // serve api endpoint
   app.get('/api', (req, res) => {
-    res.send('Hello from API endpoint');
+    res.send('Hello from API endpoint*/*/*/*/*/*/*/');
+    console.log("INTO API LAND")
   });
 
   // apply user apis

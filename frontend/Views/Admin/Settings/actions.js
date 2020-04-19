@@ -56,6 +56,7 @@ export const updateAdminBoardName = (newBoardName) => {
  * @return {action}
  */
 export const updateAdminBoardLogo = (newBoardLogoURL) => {
+  console.log("Yahooooooo")
   return (dispatch, getState) => {
     dispatch({ type: UPDATE_BOARD_LOGO });
 

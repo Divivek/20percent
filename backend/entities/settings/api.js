@@ -24,6 +24,7 @@ const settingsAPI = (app) => {
   // update board name
   app.put('/api/settings/name', (req, res) => {
     if (req.user && req.user.role === 'admin') {
+      console.log("Updating Board name LOGO ")
       updateBoardName(req.body.new_board_name).then(
         (data) => { res.send(data); },
         (error) => { res.send(error); }
@@ -35,6 +36,7 @@ const settingsAPI = (app) => {
   // update board logo image
   app.put('/api/settings/logo', (req, res) => {
     if (req.user && req.user.role === 'admin') {
+      console.log("Updating LOGO ")
       updateBoardLogo(req.body.new_board_logo_URL).then(
         (data) => { res.send(data); },
         (error) => { res.send(error); }
