@@ -93,7 +93,7 @@ class LogoForm extends Component {
 }
 
 LogoForm.defaultProps = {
-  boardName: 'OpenCrisisBoard',
+  boardName: '20Percent',
   boardLogoImage: LogoImage,
 };
 

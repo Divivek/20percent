@@ -306,7 +306,7 @@ const signInViaPhone = (name, number, code) => {
               // create message
               await twilioClient.messages.create({
                 to   : number,
-                body : `Please enter the code ${user.profile.code} to login to OpenCrisisBoard.`,
+                body : `Please enter the code ${user.profile.code} to login to 20Percent.`,
                 from : 'Login',
               });
             } catch (e) {
@@ -344,7 +344,7 @@ const signInViaPhone = (name, number, code) => {
             // create message
             await twilioClient.messages.create({
               to   : number,
-              body : `Please enter the code ${newUser.profile.code} to login to OpenCrisisBoard.`,
+              body : `Please enter the code ${newUser.profile.code} to login to 20Percent.`,
               from : 'Login',
             });
           } catch (e) {

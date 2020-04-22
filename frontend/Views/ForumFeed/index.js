@@ -124,7 +124,7 @@ class ForumFeed extends Component {
 
     return (
       <div className={classnames(appLayout.constraintWidth, styles.contentArea)}>
-        <Helmet><title>{`OpenCrisisBoard | ${currentForum}`}</title></Helmet>
+        <Helmet><title>{`20Percent | ${currentForum}`}</title></Helmet>
 
         <div className={classnames(appLayout.primaryContent, styles.forumFeedContainer)}>
           <div className={styles.feedBoxContainer}>

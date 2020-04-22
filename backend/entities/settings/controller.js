@@ -12,7 +12,7 @@ const getSettings = () => {
       else if (!settings) {
         // Settings singleton doesn't yet exist in the db, create it
         const newSettings = new Settings({
-          board_name: 'OpenCrisisBoard',
+          board_name: '20Percent',
           board_logo_URL: ''
         });
         newSettings.save((error) => {

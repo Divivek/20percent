@@ -57,10 +57,10 @@ class AppContainer extends Component {
     if (forums) {
       return (
         <div>
-          <Helmet><title>20%{settings.boardName}</title></Helmet>
+          <Helmet><title>20 Percent - {settings.boardName}</title></Helmet>
 
           <div className={styles.gitForkTag}>
-            <a className={styles.gitLink} href="https://github.com/crisisboard/opencrisisboard" target="_blank">Fork on Github</a>
+            <a className={styles.gitLink} href="https://github.com/divivek/20Percent" target="_blank">Fork on Github</a>
           </div>
 
           <Header settings={settings}/>

@@ -91,7 +91,7 @@ class RegisterPhone extends Component {
 
     return (
       <div className={classnames(appLayout.constraintWidth, styles.container)}>
-        <Helmet><title>{`Register by Phone | OpenCrisisBoard`}</title></Helmet>
+        <Helmet><title>{`Register by Phone | 20Percent`}</title></Helmet>
 
         { verification ? (
           <div className={appLayout.primaryContent}>

@@ -1,8 +1,8 @@
 ![logo](https://i.imgur.com/DAwXpZs.png)
 
 
-# OpenCrisisBoard
-OpenCrisisBoard (OCB) is a lightweight forum application based on ReForum that enables social-backed, accesssible, long-form and short-form communication around crisis-related topics. OpenCrisisBoard is most useful when deployed in small communities, supported by local government as administrators and moderators. It allows users to log in with verified social media accounts to have meaningful discussions around relevant topics, in addition to offering services such as volunteering.
+# 20Percent
+20Percent (OCB) is a lightweight forum application based on ReForum that enables social-backed, accesssible, long-form and short-form communication around crisis-related topics. 20Percent is most useful when deployed in small communities, supported by local government as administrators and moderators. It allows users to log in with verified social media accounts to have meaningful discussions around relevant topics, in addition to offering services such as volunteering.
 
 ### Application Features
 * Users can log in with verified social accounts (Facebook and Twitter only, no email or account sign up allowed for social proof reasons)
@@ -28,7 +28,7 @@ OpenCrisisBoard (OCB) is a lightweight forum application based on ReForum that e
 
 
 ## Deploy with Heroku
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/crisisboard/opencrisisboard)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/crisisboard/20Percent)
 
 In order to deploy to Heroku you will need to create a Heroku account, during deployment you will be prompted for a series of keys:
 
@@ -72,7 +72,7 @@ services:
     - mongo
     environment:
     - PORT=3030
-    - DBURL=mongodb://localhost:27017/OpenCrisisBoard'
+    - DBURL=mongodb://localhost:27017/20Percent'
     - FB_APPID=[FB APP ID HERE]
     - FB_CBURL=[FB CALLBACK URL HERE]
     - FB_SECRET=[FB SECRET HERE]
@@ -107,7 +107,7 @@ Please make sure you have following software installed in your system:
 
 First you need to clone the repository:
 ```
-$ git clone https://github.com/crisisboard/opencrisisboard
+$ git clone https://github.com/crisisboard/20Percent
 ```
 
 Then you have to install the necessary dependencies using either NPM or Yarn:
@@ -174,7 +174,7 @@ FB_APPID='[FB APP ID HERE]' FB_SECRET='[FB SECRET HERE]' FB_CBURL='[FB CALLBACK 
 We need to provide all the information here. You can notice that we need the database url here too. My `local` MongoDB url looks like:
 
 ```
-mongodb://localhost:27017/OpenCrisisBoard
+mongodb://localhost:27017/20Percent
 ```
 
 Now we are ready to run the application. You can run either run the development environment of the application which will include Hot-Reload for JS codes using Webpack and the Redux dev tool extension, or you can run the production edition. The default port for developer edition is `3030`, and for production is `process.env.PORT`.
@@ -219,7 +219,7 @@ A minimal forum application built with the following technologies:
 Any pull request, issues and contribution is very appreciated. 
 
 
-OpenCrisisBoard: 
+20Percent: 
 
 [Pim de Witte](https://twitter.com/pimdewitte)
 

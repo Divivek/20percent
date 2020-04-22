@@ -197,7 +197,7 @@ class NewDiscussion extends Component {
 
     return (
       <div className={classnames(appLayout.constraintWidth, styles.content)}>
-        <Helmet><title>OpenCrisisBoard | New Discussion</title></Helmet>
+        <Helmet><title>20Percent | New Discussion</title></Helmet>
 
         <div className={styles.forumInfo}>
           You are creating a new discussion on <span className={styles.forumName}>{currentForum}</span> forum.

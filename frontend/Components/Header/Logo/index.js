@@ -18,7 +18,7 @@ const Logo = (props) => {
 };
 
 Logo.defaultProps = {
-  boardName: 'OpenCrisisBoard',
+  boardName: '20Percent',
   logoImage: LogoImage
 };
 

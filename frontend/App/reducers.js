@@ -20,7 +20,7 @@ const initialState = {
   currentForum: 'general',
   error: false,
   settings: {
-    boardName: 'OpenCrisisBoard',
+    boardName: '20Percent',
     boardLogoImage: LogoImage
   }
 };

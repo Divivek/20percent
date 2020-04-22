@@ -1,10 +1,10 @@
 {
-  "name": "OpenCrisisBoard",
-  "description": "OpenCrisisBoard (OCB) is a lightweight forum application that enables social-backed, accessible communication around crisis-related topics via simple forum boards.",
-  "repository": "https://github.com/crisisboard/opencrisisboard",
+  "name": "20Percent",
+  "description": "20Percent (OCB) is a lightweight forum application that enables social-backed, accessible communication around crisis-related topics via simple forum boards.",
+  "repository": "https://github.com/divivek/20Percent",
   "logo": "https://camo.githubusercontent.com/734cbd3f25d697d4f19914c9005708ab1dddcd49/68747470733a2f2f692e696d6775722e636f6d2f44417758705a732e706e67",
   "keywords": ["form", "covid-19", "coronavirus"],
-  "website": "https://opencrisisboard.org/",
+  "website": "https://20Percent.world/",
   "env": {
     "FB_APPID" : {
       "description": "FaceBook APP ID: https://developers.facebook.com/",
