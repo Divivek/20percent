@@ -4,7 +4,7 @@ import styles from './styles.css';
 import _ from 'lodash';
 
 import Button from 'Components/Button';
-import LogoImage from 'SharedStyles/logo.png';
+import LogoImage from 'SharedStyles/20-1.png';
 
 class LogoForm extends Component {
   constructor(props) {

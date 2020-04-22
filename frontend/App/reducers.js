@@ -12,7 +12,7 @@ import {
   FETCHING_SETTINGS_FAILURE
 } from './constants';
 
-import LogoImage from 'SharedStyles/logo.png';
+import LogoImage from 'SharedStyles/20-1.png';
 
 const initialState = {
   fetchingForums: false,

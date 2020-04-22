@@ -1,7 +1,7 @@
 import { Link } from 'react-router'
 import React from 'react';
 import styles from './styles';
-import LogoImage from 'SharedStyles/logo.png';
+import LogoImage from 'SharedStyles/20-1.png';
 
 const Logo = (props) => {
 
