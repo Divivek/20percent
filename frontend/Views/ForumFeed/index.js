@@ -124,10 +124,18 @@ class ForumFeed extends Component {
 
     return (
       <div className={classnames(appLayout.constraintWidth, styles.contentArea)}>
-        <Helmet><title>{`20Percent | ${currentForum}`}</title></Helmet>
+        <Helmet><title>{`20Percent <|> ${currentForum}`}</title></Helmet>
 
         <div className={classnames(appLayout.primaryContent, styles.forumFeedContainer)}>
           <div className={styles.feedBoxContainer}>
+            <div>
+                <h2>Spend 20% more nad bring economy back on track quickly</h2>
+                <h5>We all did our part during COVID-19 outbreak by staying home. Now that is coming to an end we have more responsibilities to make our contribution back into sociaty
+                    As the country reopens we can help again to quickly get back to Normal by Spending 20% more every time possible</h5>
+                <h5> Use discussion fourms above to exchange your thouhgts with like minded people
+                    
+                </h5>
+            </div>
             <FeedBox
               type='pinned'
               loading={fetchingPinnedDiscussions}

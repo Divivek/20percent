@@ -12,7 +12,7 @@ const devConfigs = (app) => {
   // webpack development configuration
   const webpackConfig = require('../config/webpack.dev.config');
   const webpackCompiler = webpack(webpackConfig);
-
+console.log("Loading Dev Config")
   // apply dev middleware
   app.use(webpackDevMiddleware(webpackCompiler, {
     publicPath: webpackConfig.output.publicPath,

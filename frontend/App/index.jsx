@@ -28,6 +28,7 @@ ReactDOM.render (
         <Route path="/admin/settings" component={Settings} />
       </Route>
       <Route path="/" component={AppContainer}>
+        <div>This is new desired text here </div>
         <IndexRoute component={ForumFeed} />
         <Route path=":forum" component={ForumFeed} />
         <Route path=":forum/discussion/:discussion" component={SingleDiscussion} />
