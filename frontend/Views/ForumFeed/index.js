@@ -129,10 +129,11 @@ class ForumFeed extends Component {
         <div className={classnames(appLayout.primaryContent, styles.forumFeedContainer)}>
           <div className={styles.feedBoxContainer}>
             <div>
-                <h2>Spend 20% more nad bring economy back on track quickly</h2>
-                <h5>We all did our part during COVID-19 outbreak by staying home. Now that is coming to an end we have more responsibilities to make our contribution back into sociaty
-                    As the country reopens we can help again to quickly get back to Normal by Spending 20% more every time possible</h5>
-                <h5> Use discussion fourms above to exchange your thouhgts with like minded people
+                <h1> Stay home save lives <-> Spend 20% more save economy</h1>
+                <h2>Spend 20% more and bring our economy back on track quickly</h2>
+                <h5>We all did our part during the COVID-19 outbreak by staying home. Now that is quarantine is lifting, we have more responsibilities to make our contributions back into society.
+                    As the world reopens, we can help to quickly get back to normal by spending 20% more every time possible.</h5>
+                <h5> Use the discussion fourms above to exchange your thoughts with like-minded people. Share your contributions with #20%More.
                     
                 </h5>
             </div>
