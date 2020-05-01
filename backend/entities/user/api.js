@@ -16,11 +16,14 @@ const userAPI = (app) => {
   // facebook authentication route
   app.get(
     '/api/user/authViaFacebook',
-    passport.authenticate('facebook', {
-      scope : ['user_link']
-    })
+    passport.authenticate('facebook')
   );
-
+  // app.get(
+  //   '/api/user/authViaFacebook',
+  //   passport.authenticate('facebook', {
+  //     scope : ['user_link']
+  //   })
+  // );
   // twitter authentication route
   app.get(
     '/api/user/authViaTwitter',
