@@ -22,11 +22,7 @@ module.exports = {
   
 // google details
   GOOGLE_CONSUMER_KEY : process.env.GOOGLE_CONSUMER_KEY || null,
-<<<<<<< HEAD
-  GOGGOLE_CBURL : process.env.GOGGOLE_CBURL || null,
-=======
-  GOGGOLE_CBURL : process.env.GOGGOLE_CBURL || 'http://localhost:8080/api/user/authViaGoogle/callback',
->>>>>>> ecc80c22d95710fd0b553b7a737559773e35be53
+  GOGGOLE_CBURL : process.env.GOGGOLE_CBURL || null, //'http://localhost:8080/api/user/authViaGoogle/callback',
 //  FB_FIELDS : process.env.FB_FIELDS || ['id', 'displayName', 'picture.type(large)', 'email', 'birthday', 'friends', 'first_name', 'last_name', 'middle_name', 'gender', 'link'],
   GOOGLE_CONSUMER_SECRET : process.env.GOOGLE_CONSUMER_SECRET || null,
 
