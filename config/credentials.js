@@ -21,10 +21,10 @@ module.exports = {
   GH_SECRET : process.env.GH_SECRET || null,
   
 // google details
-  GOOGLE_CONSUMER_KEY : process.env.GOOGLE_CONSUMER_KEY || '93936512836-94o4m1ugg2j8nek0ujcr9efr56ib3k14.apps.googleusercontent.com',
+  GOOGLE_CONSUMER_KEY : process.env.GOOGLE_CONSUMER_KEY || null,
   GOGGOLE_CBURL : process.env.GOGGOLE_CBURL || 'http://localhost:8080/api/user/authViaGoogle/callback',
 //  FB_FIELDS : process.env.FB_FIELDS || ['id', 'displayName', 'picture.type(large)', 'email', 'birthday', 'friends', 'first_name', 'last_name', 'middle_name', 'gender', 'link'],
-  GOOGLE_CONSUMER_SECRET : process.env.GOOGLE_CONSUMER_SECRET || 'egWUWtmXSI_bvkXvBPATArZx',
+  GOOGLE_CONSUMER_SECRET : process.env.GOOGLE_CONSUMER_SECRET || null,
 
 
     // fill in these values to center the map views in the app
