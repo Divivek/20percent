@@ -173,8 +173,81 @@ const signInViaFacebook = (profile) => {
   });
 };
 
+/**
+ * sign in/up user via google provided info
+ * this will signin the user if user existed
+ * or will create a new user using git infos
+ * @param  {Object} profile    profile information provided by google
+ * @return {promise}          user doc
+ */
+const signInViaGoogle = (profile) => {
+  return new Promise((resolve, reject) => {
 
-/**190
+    // find if user exist on db
+    User.findOne({ 'profile.id' : profile.id, 'provider' : 'google' }, (error, user) => {
+      if (error) { console.log(error); reject(error); }
+      else {
+        // get the email from emails array of Profile
+        const email = profile.emails ? _.find(profile.emails).value : null;
+        const avatar = profile.photos ? _.find(profile.photos).value : null;
+
+        // user existed on db
+        if (user) {
+          // update the user with latest git profile info
+          user.name = profile.displayName;
+          user.email = email;
+          user.provider = 'google';
+          user.username = profile.username || profile.displayName;
+          user.avatarUrl = avatar;
+          user.profile.id = profile.displayName;
+          user.profile.url = profile.profileUrl;
+
+          // save the info and resolve the user doc
+          user.save((error) => {
+            if (error) { console.log(error); reject(error); }
+            else { resolve(user); }
+          });
+        }
+
+        // user doesn't exists on db
+        else {
+          // check if it is the first user (adam/eve) :-p
+          // assign him/her as the admin
+          User.count({}, (err, count) => {
+            console.log('usercount: ' + count);
+
+            let assignAdmin = false;
+            if (count === 0) assignAdmin = true;
+
+            // create a new user
+            const newUser = new User({
+              name: profile.displayName,
+              role: assignAdmin ? 'admin' : 'user',
+              email: email,
+              provider: 'google',
+              username: profile.username || profile.displayName,
+              avatarUrl: avatar,
+              profile: {
+                id: profile.id,
+                url: profile.profileUrl,
+              },
+            });
+
+            // save the user and resolve the user doc
+            newUser.save((error) => {
+              if (error) { console.log(error); reject(error); }
+              else { resolve(newUser); }
+            });
+
+          });
+        }
+      }
+    });
+
+  });
+};
+
+/**
  * sign in/up user via github provided info
  * this will signin the user if user existed
  * or will create a new user using git infos
@@ -413,4 +486,5 @@ module.exports = {
   signInViaGithub,
   signInViaTwitter,
   signInViaFacebook,
+  signInViaGoogle,
 };

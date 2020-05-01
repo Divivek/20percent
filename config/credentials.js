@@ -19,6 +19,13 @@ module.exports = {
   GH_APPID : process.env.GH_APPID || null,
   GH_CBURL : process.env.GH_CBURL || null, // 'http://localhost:8080/api/user/authViaGithub/callback',
   GH_SECRET : process.env.GH_SECRET || null,
+  
+// google details
+  GOOGLE_CONSUMER_KEY : process.env.GOOGLE_CONSUMER_KEY || '93936512836-94o4m1ugg2j8nek0ujcr9efr56ib3k14.apps.googleusercontent.com',
+  GOGGOLE_CBURL : process.env.GOGGOLE_CBURL || 'http://localhost:8080/api/user/authViaGoogle/callback',
+//  FB_FIELDS : process.env.FB_FIELDS || ['id', 'displayName', 'picture.type(large)', 'email', 'birthday', 'friends', 'first_name', 'last_name', 'middle_name', 'gender', 'link'],
+  GOOGLE_CONSUMER_SECRET : process.env.GOOGLE_CONSUMER_SECRET || 'egWUWtmXSI_bvkXvBPATArZx',
+
 
     // fill in these values to center the map views in the app
   MAP_DEFAULT_CENTER_LATITUDE: process.env.MAP_DEFAULT_CENTER_LATITUDE || 37.7749,

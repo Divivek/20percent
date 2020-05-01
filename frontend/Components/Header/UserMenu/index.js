@@ -52,7 +52,12 @@ class UserMenu extends Component {
                   <span className={styles.btnLabel}>With Twitter</span>
                 </Button>
               </a> */}
-              <a className={styles.signInLink} href={'/api/user/authViaGithub'}>
+              <a className={styles.signInLink} href={'/api/user/authViaGoogle'}>
+                <Button className={styles.gitLoginBtn} alwaysActive>
+                  <i className={classnames('fa fa-twitter', styles.subMenuOcto)}></i>
+                  <span className={styles.btnLabel}>With Google</span>
+                </Button>
+              </a>              <a className={styles.signInLink} href={'/api/user/authViaGithub'}>
                 <Button className={styles.gitLoginBtn} alwaysActive>
                   <i className={classnames('fa fa-github', styles.subMenuOcto)}></i>
                   <span className={styles.btnLabel}>With Github</span>

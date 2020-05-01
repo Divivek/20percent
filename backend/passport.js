@@ -5,12 +5,14 @@ const passport = require('passport');
 const GitHubStrategy = require('passport-github').Strategy;
 const TwitterStrategy = require('passport-twitter').Strategy;
 const FacebookStrategy = require('passport-facebook').Strategy;
+const GoogleStrategy = require('passport-google-oauth').OAuth2Strategy;
 
 // controllers
 const getUser = require('./entities/user/controller').getUser;
 const signInViaGithub = require('./entities/user/controller').signInViaGithub;
 const signInViaTwitter = require('./entities/user/controller').signInViaTwitter;
 const signInViaFacebook = require('./entities/user/controller').signInViaFacebook;
+const signInViaGoogle = require('./entities/user/controller').signInViaGoogle;
 
 // create credentials
 const FB_APPID = require('../config/credentials').FB_APPID;
@@ -27,6 +29,12 @@ const TW_SECRET = require('../config/credentials').TW_SECRET;
 const GH_APPID = require('../config/credentials').GH_APPID;
 const GH_CBURL = require('../config/credentials').GH_CBURL;
 const GH_SECRET = require('../config/credentials').GH_SECRET;
+
+// create credentials
+const GOOGLE_CONSUMER_KEY = require('../config/credentials').GOOGLE_CONSUMER_KEY;
+const GOGGOLE_CBURL = require('../config/credentials').GOGGOLE_CBURL;
+//const GOGGOLE_FIELDS = require('../config/credentials').GOGGOLE_FIELDS;
+const GOOGLE_CONSUMER_SECRET = require('../config/credentials').GOOGLE_CONSUMER_SECRET;
 
 /**
  * passport configuration
@@ -49,6 +57,29 @@ const passportConfig = (app) => {
       done(e);
     }
   });
+
+    // create Google
+    if (GOOGLE_CONSUMER_KEY && GOOGLE_CONSUMER_SECRET) {
+      // create new google strategy
+      passport.use(new GoogleStrategy({
+        clientID: GOOGLE_CONSUMER_KEY,
+        callbackURL: GOGGOLE_CBURL,
+        clientSecret: GOOGLE_CONSUMER_SECRET,
+      }, async (accessToken, refreshToken, profile, done) => {
+  
+        // try/catch
+        try {
+          // get user
+          const user = await signInViaGoogle(profile);
+  
+          // check user
+          console.log('got the user'); done(null, user);
+        } catch (e) {
+          console.log('something error occurs'); done(error);
+        }
+      }));
+    }
+  
 
   // create facebook
   if (FB_APPID && FB_SECRET) {
