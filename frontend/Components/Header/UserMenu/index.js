@@ -54,7 +54,7 @@ class UserMenu extends Component {
               </a>
               <a className={styles.signInLink} href={'/api/user/authViaGoogle'}>
                 <Button className={styles.gitLoginBtn} alwaysActive>
-                  <i className={classnames('fa fa-twitter', styles.subMenuOcto)}></i>
+                  <i className={classnames('fa fa-google', styles.subMenuOcto)}></i>
                   <span className={styles.btnLabel}>With Google</span>
                 </Button>
               </a>              <a className={styles.signInLink} href={'/api/user/authViaGithub'}>
