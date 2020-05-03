@@ -36,7 +36,6 @@ export const getBrowserLocation = (successCallback, errorCallback) => {
  */
 export const getGeolocationFromAddress = async (address) => {
   const geoLocation = {};
-
   return await new OpenStreetMapProvider()
   .search({ query: address })
   .then(

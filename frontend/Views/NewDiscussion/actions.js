@@ -74,8 +74,11 @@ export const postDiscussion = (userId, forumId, currentForum) => {
 
     // make api call if post is validated
     if (validated) {
-      const { latitude, longitude } = geoLocation.coords
-
+      // geoLocation.lat = 37.7749;
+      // geoLocation.lng = -122.4194;
+      // const { latitude, longitude } ={ 37.7749,-122.4194} // geoLocation.coords
+      const latitude = 37.7749;
+      const longitude= -122.4194;
       postDiscussionApi({
         userId,
         forumId,
