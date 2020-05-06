@@ -46,7 +46,7 @@ class NewDiscussion extends Component {
     } = this.props;
 
     this.setUserAndForumID(user, forums, currentForum);
-    this.getAndUpdateBrowserLocation();
+    // this.getAndUpdateBrowserLocation();
   }
 
   componentWillReceiveProps(nextProps) {

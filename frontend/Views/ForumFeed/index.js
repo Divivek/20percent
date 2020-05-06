@@ -44,7 +44,7 @@ class ForumFeed extends Component {
     getDiscussions(currentForumId());
     getPinnedDiscussions(currentForumId());
 
-    this.setMapLocation();
+    // this.setMapLocation();
   }
 
   componentDidUpdate(prevProps) {
