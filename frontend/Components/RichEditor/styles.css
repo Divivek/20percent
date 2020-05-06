@@ -23,12 +23,24 @@
   width: 100%;
   min-height: 60px;
   border-bottom: 1px solid borderColor;
+  border: .02rem solid black;
   cursor: text;
 
   & :global .public-DraftEditorPlaceholder-root {
     position: absolute;
     color: secondaryFontColor;
   }
+}
+
+.editorContainer:focus {
+  border: 2rem solid black;
+  cursor: text;
+  background-color: yellow;
+
+  /* & :global .public-DraftEditorPlaceholder-root {
+    position: absolute;
+    color: secondaryFontColor;
+  } */
 }
 
 .readOnlyEditorContainer {
@@ -54,8 +66,18 @@
   @media smallBP { flex-direction: column-reverse; }
 }
 
+
+.controlsContainer:focus {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  border: .2rem solid borderColor;
+  border-bottom: 1px solid borderColor;
+  @media smallBP { flex-direction: column-reverse; }
+}
 .controls {
   display: flex;
+
 }
 
 .controlButton {

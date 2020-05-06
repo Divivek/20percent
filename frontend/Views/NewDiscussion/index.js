@@ -142,18 +142,18 @@ class NewDiscussion extends Component {
           value={title}
           onChange={(event) => { updateDiscussionTitle(event.target.value); }}
         />,
-        <input
-          key={'address'}
-          type="text"
-          className={styles.addressInput}
-          placeholder={'Address...'}
-          value={address}
-          onChange={(event) => { this.setState({ address: event.target.value }); }}
-          onBlur={(event) => {
-            const { value } = event.target;
-            if (value !== '') this.getAndUpdateGeolocationFromAddress();
-          }}
-        />,
+        // <input
+        //   key={'address'}
+        //   type="text"
+        //   className={styles.addressInput}
+        //   placeholder={'Address...'}
+        //   value={address}
+        //   onChange={(event) => { this.setState({ address: event.target.value }); }}
+        //   onBlur={(event) => {
+        //     const { value } = event.target;
+        //     if (value !== '') this.getAndUpdateGeolocationFromAddress();
+        //   }}
+        // />,
         (role === 'admin') && <PinButton
           key={'pinned'}
           value={pinned}

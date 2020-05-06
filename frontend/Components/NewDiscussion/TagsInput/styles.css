@@ -29,6 +29,13 @@
   background-color: none;
 }
 
+.tagInput:focus {
+  width: 100px;
+  padding: 10px 10px;
+  border: .01rem solid black;;
+  outline: none;
+  background-color: yellow;
+}
 .addButton {
   padding: 5px 10px;
   font-size: 20px;
