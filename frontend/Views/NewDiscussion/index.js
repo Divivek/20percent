@@ -189,6 +189,7 @@ class NewDiscussion extends Component {
     if (fatalError) { return (<div className={classnames(styles.errorMsg, styles.fatalError)}>{fatalError}</div>); }
 
     const { currentForum } = this.props;
+    const currentForumName = _.find(this.props.forums, { forum_slug: currentForum }).forum_name;
     const {
       errorMsg,
       postingSuccess,
@@ -200,7 +201,7 @@ class NewDiscussion extends Component {
         <Helmet><title>{`20Percent | New Discussion`}</title></Helmet>
 
         <div className={styles.forumInfo}>
-          You are creating a new discussion on <span className={styles.forumName}>{currentForum}</span> forum.
+          You are creating a new discussion on <span className={styles.forumName}> "{currentForumName}"</span> forum.
         </div>
         <div className={styles.errorMsg}>{errorMsg}</div>
         { postingSuccess && <div className={styles.successMsg}>Your discussion is created :-)</div> }
