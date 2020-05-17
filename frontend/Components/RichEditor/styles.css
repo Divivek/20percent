@@ -146,3 +146,888 @@
 .editorH1Style { font-size: 1.6em; }
 .editorH2Style { font-size: 1.3em; }
 .editorH3Style { font-size: 1.1em; }
+
+.rdwOptionWrapper {
+  border: 1px solid #F1F1F1;
+  padding: 5px;
+  min-width: 25px;
+  height: 20px;
+  border-radius: 2px;
+  margin: 0 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background: white;
+  text-transform: capitalize;
+}
+.rdwOptionWrapper:hover {
+  box-shadow: 1px 1px 0px #BFBDBD;
+}
+.rdwOptionWrapper:active {
+  box-shadow: 1px 1px 0px #BFBDBD inset;
+}
+.rdwOptionActive {
+  box-shadow: 1px 1px 0px #BFBDBD inset;
+}
+.rdwOptionDisabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+.rdwDropdownWrapper {
+  height: 30px;
+  background: white;
+  cursor: pointer;
+  border: 1px solid #F1F1F1;
+  border-radius: 2px;
+  margin: 0 3px;
+  text-transform: capitalize;
+  background: white;
+}
+.rdwDropdownWrapper:focus {
+  outline: none;
+}
+.rdwDropdownWrapper:hover {
+  box-shadow: 1px 1px 0px #BFBDBD;
+  background-color: #FFFFFF;
+}
+.rdwDropdownWrapper:active {
+  box-shadow: 1px 1px 0px #BFBDBD inset;
+}
+.rdwDropdownCarettoopen {
+  height: 0px;
+  width: 0px;
+  position: absolute;
+  top: 35%;
+  right: 10%;
+  border-top: 6px solid black;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+}
+.rdwDropdownCarettoclose {
+  height: 0px;
+  width: 0px;
+  position: absolute;
+  top: 35%;
+  right: 10%;
+  border-bottom: 6px solid black;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+}
+.rdwDropdownSelectedtext {
+  display: flex;
+  position: relative;
+  height: 100%;
+  align-items: center;
+  padding: 0 5px;
+}
+.rdwDropdownOptionwrapper {
+  z-index: 100;
+  position: relative;
+  border: 1px solid #F1F1F1;
+  width: 98%;
+  background: white;
+  border-radius: 2px;
+  margin: 0;
+  padding: 0;
+  max-height: 250px;
+  overflow-y: scroll;
+}
+.rdwDropdownOptionwrapper:hover {
+  box-shadow: 1px 1px 0px #BFBDBD;
+  background-color: #FFFFFF;
+}
+
+.rdwDropdownoptionDefault {
+  min-height: 25px;
+  display: flex;
+  align-items: center;
+  padding: 0 5px;
+}
+.rdwDropdownoptionHighlighted {
+  background: #F1F1F1;
+}
+.rdwDropdownoptionActive {
+  background: #f5f5f5;
+}
+.rdwDropdownoptionDisabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+.rdwInlineWrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+  flex-wrap: wrap
+}
+.rdwInlineDropdown {
+  width: 50px;
+}
+.rdwInlineDropdownoption {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.rdwBlockWrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+  flex-wrap: wrap
+}
+.rdwBlockDropdown {
+  width: 110px;
+}
+
+.rdwFontsizeWrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+  flex-wrap: wrap
+}
+.rdwFontsizeDropdown {
+  min-width: 40px;
+}
+.rdwFontsizeOption {
+  display: flex;
+  justify-content: center;
+}
+
+.rdwFontfamilyWrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+  flex-wrap: wrap
+}
+.rdwFontfamilyDropdown {
+  width: 115px;
+}
+.rdwFontfamilyPlaceholder {
+  white-space: nowrap;
+  max-width: 90px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.rdwFontfamilyOptionwrapper {
+  width: 140px;
+}
+
+.rdwListWrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+  flex-wrap: wrap
+}
+.rdwListDropdown {
+  width: 50px;
+  z-index: 90;
+}
+.rdwListDropdownOption {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.rdwTextAlignWrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+  flex-wrap: wrap
+}
+.rdwTextAlignDropdown {
+  width: 50px;
+  z-index: 90;
+}
+.rdwTextAlignDropdownOption {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+.rdwRightAlignedBlock {
+  text-align: right;
+}
+.rdwLeftAlignedBlock {
+  text-align: left !important;
+}
+.rdwCenterAlignedBlock {
+  text-align: center !important;
+}
+.rdwJustifyAlignedBlock {
+  text-align: justify !important;
+}
+.rdwRightAlignedBlock > div {
+  display: inline-block;
+}
+.rdwLeftAlignedBlock > div {
+  display: inline-block;
+}
+.rdwCenterAlignedBlock > div {
+  display: inline-block;
+}
+.rdwJustifyAlignedBlock > div {
+  display: inline-block;
+}
+
+.rdwColorpickerWrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+  position: relative;
+  flex-wrap: wrap
+}
+.rdwColorpickerModal {
+  position: absolute;
+  top: 35px;
+  left: 5px;
+  display: flex;
+  flex-direction: column;
+  width: 175px;
+  height: 175px;
+  border: 1px solid #F1F1F1;
+  padding: 15px;
+  border-radius: 2px;
+  z-index: 100;
+  background: white;
+  box-shadow: 3px 3px 5px #BFBDBD;
+}
+.rdwColorpickerModalHeader {
+  display: flex;
+  padding-bottom: 5px;
+}
+.rdwColorpickerModalStyleLabel {
+  font-size: 15px;
+  width: 50%;
+  text-align: center;
+  cursor: pointer;
+  padding: 0 10px 5px;
+}
+.rdwColorpickerModalStyleLabelActive {
+  border-bottom: 2px solid #0a66b7;
+}
+.rdwColorpickerModalOptions {
+  margin: 5px auto;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+  overflow: scroll;
+}
+.rdwColorpickerCube {
+  width: 22px;
+  height: 22px;
+  border: 1px solid #F1F1F1;
+}
+.rdwColorpickerOption {
+  margin: 3px;
+  padding: 0;
+  min-height: 20px;
+  border: none;
+  width: 22px;
+  height: 22px;
+  min-width: 22px;
+  box-shadow: 1px 2px 1px #BFBDBD inset;
+}
+.rdwColorpickerOption:hover {
+  box-shadow: 1px 2px 1px #BFBDBD;
+}
+.rdwColorpickerOption:active {
+  box-shadow: -1px -2px 1px #BFBDBD;
+}
+.rdwColorpickerOptionActive {
+  box-shadow: 0px 0px 2px 2px #BFBDBD;
+}
+
+.rdwLinkWrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+  position: relative;
+  flex-wrap: wrap
+}
+.rdwLinkDropdown {
+  width: 50px;
+}
+.rdwLinkDropdownOption {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+.rdwLinkDropdownPlaceholder {
+  margin-left: 8px;
+}
+.rdwLinkModal {
+  position: absolute;
+  top: 35px;
+  left: 5px;
+  display: flex;
+  flex-direction: column;
+  width: 235px;
+  height: 205px;
+  border: 1px solid #F1F1F1;
+  padding: 15px;
+  border-radius: 2px;
+  z-index: 100;
+  background: white;
+  box-shadow: 3px 3px 5px #BFBDBD;
+}
+.rdwLinkModalLabel {
+  font-size: 15px;
+}
+.rdwLinkModalInput {
+  margin-top: 5px;
+  border-radius: 2px;
+  border: 1px solid #F1F1F1;
+  height: 25px;
+  margin-bottom: 15px;
+  padding: 0 5px;
+}
+.rdwLinkModalInput:focus {
+  outline: none;
+}
+.rdwLinkModalButtonsection {
+  margin: 0 auto;
+}
+.rdwLinkModalTargetOption {
+  margin-bottom: 20px;
+}
+.rdwLinkModalTargetOption > span {
+  margin-left: 5px;
+}
+.rdwLinkModalBtn {
+  margin-left: 10px;
+  width: 75px;
+  height: 30px;
+  border: 1px solid #F1F1F1;
+  border-radius: 2px;
+  cursor: pointer;
+  background: white;
+  text-transform: capitalize;
+}
+.rdwLinkModalBtn:hover {
+  box-shadow: 1px 1px 0px #BFBDBD;
+}
+.rdwLinkModalBtn:active {
+  box-shadow: 1px 1px 0px #BFBDBD inset;
+}
+.rdwLinkModalBtn:focus {
+  outline: none !important;
+}
+.rdwLinkModalBtn:disabled {
+  background: #ece9e9;
+}
+.rdwLinkDropdownoption {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+.rdwHistoryDropdown {
+  width: 50px;
+}
+
+.rdwEmbeddedWrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+  position: relative;
+  flex-wrap: wrap
+}
+.rdwEmbeddedModal {
+  position: absolute;
+  top: 35px;
+  left: 5px;
+  display: flex;
+  flex-direction: column;
+  width: 235px;
+  height: 180px;
+  border: 1px solid #F1F1F1;
+  padding: 15px;
+  border-radius: 2px;
+  z-index: 100;
+  background: white;
+  justify-content: space-between;
+  box-shadow: 3px 3px 5px #BFBDBD;
+}
+.rdwEmbeddedModalHeader {
+  font-size: 15px;
+  display: flex;
+}
+.rdwEmbeddedModalHeaderOption {
+  width: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.rdwEmbeddedModalHeaderLabel {
+  width: 95px;
+  border: 1px solid #f1f1f1;
+  margin-top: 5px;
+  background: #6EB8D4;
+  border-bottom: 2px solid #0a66b7;
+}
+.rdwEmbeddedModalLinkSection {
+  display: flex;
+  flex-direction: column;
+}
+.rdwEmbeddedModalLinkInput {
+  width: 88%;
+  height: 35px;
+  margin: 10px 0;
+  border: 1px solid #F1F1F1;
+  border-radius: 2px;
+  font-size: 15px;
+  padding: 0 5px;
+}
+.rdwEmbeddedModalLinkInputWrapper {
+  display: flex;
+  align-items: center;
+}
+.rdwEmbeddedModalLinkInput:focus {
+  outline: none;
+}
+.rdwEmbeddedModalBtnSection {
+  display: flex;
+  justify-content: center;
+}
+.rdwEmbeddedModalBtn {
+  margin: 0 3px;
+  width: 75px;
+  height: 30px;
+  border: 1px solid #F1F1F1;
+  border-radius: 2px;
+  cursor: pointer;
+  background: white;
+  text-transform: capitalize;
+}
+.rdwEmbeddedModalBtn:hover {
+  box-shadow: 1px 1px 0px #BFBDBD;
+}
+.rdwEmbeddedModalBtn:active {
+  box-shadow: 1px 1px 0px #BFBDBD inset;
+}
+.rdwEmbeddedModalBtn:focus {
+  outline: none !important;
+}
+.rdwEmbeddedModalBtn:disabled {
+  background: #ece9e9;
+}
+.rdwEmbeddedModalSize {
+  align-items: center;
+  display: flex;
+  margin: 8px 0;
+  justify-content: space-between;
+}
+.rdwEmbeddedModalSizeInput {
+  width: 80%;
+  height: 20px;
+  border: 1px solid #F1F1F1;
+  border-radius: 2px;
+  font-size: 12px;
+}
+.rdwEmbeddedModalSizeInput:focus {
+  outline: none;
+}
+
+.rdwEmojiWrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+  position: relative;
+  flex-wrap: wrap
+}
+.rdwEmojiModal {
+  overflow: auto;
+  position: absolute;
+  top: 35px;
+  left: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 235px;
+  height: 180px;
+  border: 1px solid #F1F1F1;
+  padding: 15px;
+  border-radius: 2px;
+  z-index: 100;
+  background: white;
+  box-shadow: 3px 3px 5px #BFBDBD;
+}
+.rdwEmojiIcon {
+  margin: 2.5px;
+  height: 24px;
+  width: 24px;
+  cursor: pointer;
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rdwSpinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+.rdwSpinner > div {
+  width: 12px;
+  height: 12px;
+  background-color: #333;
+
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+.rdwSpinner .rdwBounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+.rdwSpinner .rdwBounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+@-webkit-keyframes sk-bouncedelay {
+  0%, 80%, 100% { -webkit-transform: scale(0) }
+  40% { -webkit-transform: scale(1.0) }
+}
+@keyframes sk-bouncedelay {
+  0%, 80%, 100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  } 40% {
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+  }
+}
+
+.rdwImageWrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+  position: relative;
+  flex-wrap: wrap
+}
+.rdwImageModal {
+  position: absolute;
+  top: 35px;
+  left: 5px;
+  display: flex;
+  flex-direction: column;
+  width: 235px;
+  border: 1px solid #F1F1F1;
+  padding: 15px;
+  border-radius: 2px;
+  z-index: 100;
+  background: white;
+  box-shadow: 3px 3px 5px #BFBDBD;
+}
+.rdwImageModalHeader {
+  font-size: 15px;
+  margin: 10px 0;
+  display: flex;
+}
+.rdwImageModalHeaderOption {
+  width: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.rdwImageModalHeaderLabel {
+  width: 80px;
+  background: #f1f1f1;
+  border: 1px solid #f1f1f1;
+  margin-top: 5px;
+}
+.rdwImageModalHeaderLabelHighlighted {
+  background: #6EB8D4;
+  border-bottom: 2px solid #0a66b7;
+}
+.rdwImageModalUploadOption {
+  width: 100%;
+  color: gray;
+  cursor: pointer;
+  display: flex;
+  border: none;
+  font-size: 15px;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1f1f1;
+  outline: 2px dashed gray;
+  outline-offset: -10px;
+  margin: 10px 0;
+  padding: 9px 0;
+}
+.rdwImageModalUploadOptionHighlighted {
+  outline: 2px dashed #0a66b7;
+}
+.rdwImageModalUploadOptionLabel {
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+.rdwImageModalUploadOptionLabel span{
+  padding: 0 20px;
+}
+.rdwImageModalUploadOptionImagePreview {
+  max-width: 100%;
+  max-height: 200px;
+}
+.rdwImageModalUploadOptionInput {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+.rdwImageModalUrlSection {
+  display: flex;
+  align-items: center;
+}
+.rdwImageModalUrlInput {
+  width: 90%;
+  height: 35px;
+  margin: 15px 0 12px;
+  border: 1px solid #F1F1F1;
+  border-radius: 2px;
+  font-size: 15px;
+  padding: 0 5px;
+}
+.rdwImageModalBtnSection {
+  margin: 10px auto 0;
+}
+.rdwImageModalUrlInput:focus {
+  outline: none;
+}
+.rdwImageModalBtn {
+  margin: 0 5px;
+  width: 75px;
+  height: 30px;
+  border: 1px solid #F1F1F1;
+  border-radius: 2px;
+  cursor: pointer;
+  background: white;
+  text-transform: capitalize;
+}
+.rdwImageModalBtn:hover {
+  box-shadow: 1px 1px 0px #BFBDBD;
+}
+.rdwImageModalBtn:active {
+  box-shadow: 1px 1px 0px #BFBDBD inset;
+}
+.rdwImageModalBtn:focus {
+  outline: none !important;
+}
+.rdwImageModalBtn:disabled {
+  background: #ece9e9;
+}
+.rdwImageModalSpinner {
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
+.rdwImageModalAltInput {
+  width: 70%;
+  height: 20px;
+  border: 1px solid #F1F1F1;
+  border-radius: 2px;
+  font-size: 12px;
+  margin-left: 5px;
+}
+.rdwImageModalAltInput:focus {
+  outline: none;
+}
+.rdwImageModalAltLbl {
+  font-size: 12px;
+}
+.rdwImageModalSize {
+  align-items: center;
+  display: flex;
+  margin: 8px 0;
+  justify-content: space-between;
+}
+.rdwImageModalSizeInput {
+  width: 40%;
+  height: 20px;
+  border: 1px solid #F1F1F1;
+  border-radius: 2px;
+  font-size: 12px;
+}
+.rdwImageModalSizeInput:focus {
+  outline: none;
+}
+.rdwImageMandatorySign {
+  color: red;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.rdwRemoveWrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+  position: relative;
+  flex-wrap: wrap
+}
+
+.rdwHistoryWrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+  flex-wrap: wrap
+}
+.rdwHistoryDropdownoption {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+.rdwHistoryDropdown {
+  width: 50px;
+}
+
+.rdwLinkDecoratorWrapper {
+  position: relative;
+}
+.rdwLinkDecoratorIcon {
+  position: absolute;
+  left: 40%;
+  top: 0;
+  cursor: pointer;
+  background-color: white;
+}
+
+.rdwMentionLink {
+  text-decoration: none;
+  color: #1236ff;
+  background-color: #f0fbff;
+  padding: 1px 2px;
+  border-radius: 2px;
+}
+
+.rdwSuggestionWrapper {
+  position: relative;
+}
+.rdwSuggestionDropdown {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #F1F1F1;
+  min-width: 100px;
+  max-height: 150px;
+  overflow: auto;
+  background: white;
+  z-index: 100;
+}
+.rdwSuggestionOption {
+  padding: 7px 5px;
+  border-bottom: 1px solid #f1f1f1;
+}
+.rdwSuggestionOptionActive {
+  background-color: #F1F1F1;
+}
+
+.rdwHashtagLink {
+  text-decoration: none;
+  color: #1236ff;
+  background-color: #f0fbff;
+  padding: 1px 2px;
+  border-radius: 2px;
+}
+
+.rdwImageAlignmentOptionsPopup {
+  position: absolute;
+  background: white;
+  display: flex;
+  padding: 5px 2px;
+  border-radius: 2px;
+  border: 1px solid #F1F1F1;
+  width: 105px;
+  cursor: pointer;
+  z-index: 100;
+}
+.rdwAlignmentOptionLeft {
+  justify-content: flex-start;
+}
+.rdwImageAlignmentOption {
+  height: 15px;
+  width: 15px;
+  min-width: 15px;
+}
+.rdwImageAlignment {
+  position: relative;
+}
+.rdwImageImagewrapper {
+  position: relative;
+}
+.rdwImageCenter {
+  display: flex;
+  justify-content: center;
+}
+.rdwImageLeft {
+  display: flex;
+}
+.rdwImageRight {
+  display: flex;
+  justify-content: flex-end;
+}
+.rdwImageAlignmentOptionsPopupRight {
+  right: 0;
+}
+
+.rdwEditorMainRO {
+  height: 100%;
+  overflow: auto;
+  box-sizing: border-box;
+  
+}
+.rdwEditorMainRW {
+  height: 100%;
+  overflow: auto;
+  box-sizing: border-box;
+  border: 1px solid black;
+  background: white;
+}
+.rdwEditorToolbar {
+  padding: 6px 5px 0;
+  border-radius: 2px;
+  border: 1px solid #F1F1F1;
+  display: flex;
+  justify-content: flex-start;
+  border: "1px solid black";
+  background: #4ce0b3 ;
+  flex-wrap: wrap;
+  font-size: 15px;
+  margin-bottom: 5px;
+  user-select: none;
+}
+.publicDraftStyleDefaultBlock {
+  margin: 1em 0;
+}
+.rdwEditorWrapper:focus {
+  outline: none;
+}
+.rdwEditorWrapper {
+  box-sizing: content-box;
+}
+.rdwEditorMain blockquote {
+  border-left: 5px solid #f1f1f1;
+  padding-left: 5px;
+}
+.rdwEditorMain pre {
+  background: #f1f1f1;
+  border-radius: 3px;
+  padding: 1px 10px;
+}
