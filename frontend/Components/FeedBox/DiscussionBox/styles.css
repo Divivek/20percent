@@ -16,6 +16,9 @@
 .title {
   font-size: 18px;
   font-weight: 300;
+  color: secondaryFontColor;
+  transition: color 0.3s;
+  font-weight: bold;
 
   & a {
     text-decoration: none;
