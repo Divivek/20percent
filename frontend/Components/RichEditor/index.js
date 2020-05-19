@@ -72,13 +72,7 @@ console.log("Styles are ", styles)
           wrapperClassName={styles.rdwEditorWrapper}
           editorClassName={editorStyle} 
           onEditorStateChange={this.onEditorStateChange}
-          placeholder="Write here...
-          
-          
-          
-          
-          
-          "
+          placeholder="Write here..."
           spellCheck={true}
           toolbar={{
             // options: ['inline', 'blockType', 'fontSize', 'fontFamily', 'list', 'textAlign', 'colorPicker', 'link', 'embedded', 'emoji', 'image', 'remove', 'history'],

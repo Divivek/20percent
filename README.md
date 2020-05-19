@@ -1,8 +1,7 @@
-![logo](https://i.imgur.com/DAwXpZs.png)
 
 
 # 20Percent
-20Percent (OCB) is a lightweight forum application based on ReForum that enables social-backed, accesssible, long-form and short-form communication around crisis-related topics. 20Percent is most useful when deployed in small communities, supported by local government as administrators and moderators. It allows users to log in with verified social media accounts to have meaningful discussions around relevant topics, in addition to offering services such as volunteering.
+20Percent (20%) is a lightweight forum application based on ReForum that enables social-backed, accesssible, long-form and short-form communication around crisis-related topics. 20Percent is most useful when deployed in small communities, supported by local government as administrators and moderators. It allows users to log in with verified social media accounts to have meaningful discussions around relevant topics, in addition to offering services such as volunteering.
 
 ### Application Features
 * Users can log in with verified social accounts (Facebook and Twitter only, no email or account sign up allowed for social proof reasons)
@@ -16,15 +15,6 @@
 ### Documentations
 * [API Docs](https://github.com/shoumma/ReForum/blob/master/docs/api.md)
 * [System Overview](https://github.com/shoumma/ReForum/blob/master/docs/system_overview.md)
-
-### New Discussions
-![home view](https://i.imgur.com/bZjOeMx.png)
-### Unlimited Boards
-![home view](https://i.imgur.com/33oLs2r.png)
-### Login with Facebook or Twitter (It attaches to your post to avoid spread of misinformation)
-![home view](https://i.imgur.com/mh3q0Tg.png)
-### Admin View (Forum Board Creation/Deletion)
-![admin view](https://i.imgur.com/3hKEAy4.png)
 
 
 ## Deploy with Heroku
@@ -218,8 +208,11 @@ A minimal forum application built with the following technologies:
 ## Conclusion
 Any pull request, issues and contribution is very appreciated. 
 
+20PERCENT:
 
-20Percent: 
+Divya Jain
+
+OCB: 
 
 [Pim de Witte](https://twitter.com/pimdewitte)
 
